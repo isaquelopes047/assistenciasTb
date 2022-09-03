@@ -1,0 +1,15 @@
+.containerInfoDados{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+.containerInfoDados p{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    margin-left: 13px;
+    color: black;
+}

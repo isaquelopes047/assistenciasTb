@@ -16,8 +16,8 @@ busca.addEventListener('focusout', () => {
             if (!response.ok) {
                 throw new Error(`Error! status: ${response.status}`);
             }
+
             const urlConvertida = await response.json()
-            console.log(urlConvertida)
 
             for (var i = 0; i < urlConvertida.length; i++) {
 
@@ -53,6 +53,9 @@ busca.addEventListener('focusout', () => {
                 tr.appendChild(tdobservacao);
                 tr.appendChild(tddataEHora);
                 corpoTabela.appendChild(tr);
+
+                let informa = document.querySelector('.encontradoRegistros')
+                informa.innerHTML = `Foram encontrados ${urlConvertida.length} registros`;
             }
 
             const Limpa = document.querySelector('.valorBusca');
