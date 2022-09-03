@@ -2,192 +2,192 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../style/pageAddAssistencia.css">
-    <link rel="stylesheet" href="../style/menuLateral.css">
-    <link rel="stylesheet" href="../style/dadosAssistencias.css">
+  <link rel="stylesheet" href="../style/pageAddAssistencia.css">
+  <link rel="stylesheet" href="../style/menuLateral.css">
+  <link rel="stylesheet" href="../style/dadosAssistencias.css">
 
-    <title>Adicionar assistencia</title>
+  <title>Adicionar assistencia</title>
 </head>
 
 <body>
 
-    <div class="containerAll">
+  <div class="containerAll">
 
-        <div class="containerMsg">
-            <div class="alertMsg">
-                <img src="../icones/alert.png" alt="">
-                <p cl>Cadastro realizado com sucesso! <br> Status 201</p>
-            </div>
-        </div>
-
-
-        <!-- MENU LATERAL -->
-        <div class="menuLateralMenu">
-            <div class="optionContainer">
-                <a href="/index.html">
-                    <div class="containerIcon">
-                        <img src="../icones/iconMenuHome.png" alt="">
-                    </div>
-                    <div class="containerTitle">
-                        <p>Home page</p>
-                    </div>
-                </a>
-            </div>
-            <div class="optionContainer">
-                <a href="../pages/listaAssistencia.html">
-                    <div class="containerIcon">
-                        <img src="../icones/iconMenuAssistencia.png" alt="">
-                    </div>
-                    <div class="containerTitle">
-                        <p>Lista de dados</p>
-                    </div>
-                </a>
-            </div>
-            <div class="optionContainer">
-                <a href="../pages/addAssistencia.html">
-                    <div class="containerIcon">
-                            <img src="../icones/iconMenuMais.png" alt="">
-                    </div>
-                    <div class="containerTitle">
-                        <p>Criar registro</p>
-                    </div>
-                </a>
-            </div>
-            <div class="optionContainer">
-                <a href="../pages/filtrar.html">
-                    <div class="containerIcon">
-                        <img src="../icones/iconMenuProcura.png" alt="">
-                    </div>
-                    <div class="containerTitle">
-                        <p>Filtrar</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <!-- END MENU -->
-
-        <div class="containerLateralContent">
-
-            <div class="containerInferior">
-                <div class="containerTitleTable">
-                    <p>Adicionar nova assistencia</p>
-                    <p>Formulario para criar novo registro de assistencia (method POST)</p>
-                </div>
-
-
-                <div class="containerInputsForm">
-
-                    <form class="form" id="form" method="POST" action="./addAssistencia.html">
-                        <h1 class="text-center">Formulario de Registro</h1>
-                        <!-- Progress bar -->
-                        <div class="progressbar">
-                          <div class="progress" id="progress"></div>
-                          
-                          <div
-                            class="progress-step progress-step-active"
-                            data-title="Intro"
-                          ></div>
-                          <div class="progress-step" data-title="Contact"></div>
-                          <div class="progress-step" data-title="ID"></div>
-                          <div class="progress-step" data-title="Password"></div>
-                        </div>
-                  
-                        <!-- Steps -->
-                        <div class="form-step form-step-active">
-                          <div class="input-group">
-                            <label for="username">Tecnico responsavel</label>
-                            <select id="tecnico" name="tecnico">
-                                <option value="Isaque Lopes de Souza">Isaque Lopes de Souza</option>
-                                <option value="Anderson Mouse Davidson">Anderson Mouse Davidson</option>
-                            </select>
-                          </div>
-                          <div class="input-group">
-                            <label for="position">Setor de atendimento</label>
-                            <select id="setorAtendimeneto" name="setorAtendimento">
-                                <option value="Cte">Cte</option>
-                                <option value="acertoDeContas">Acerto de Contas</option>
-                                <option value="Rastreamento">Ratreamento</option>
-                                <option value="Cargas">Cargas</option>
-                                <option value="Atendimento">Atendimento</option>
-                                <option value="Borracharia">Borracharia</option>
-                                <option value="Deposito">Deposito</option>
-                                <option value="Oficina">Oficina</option>
-                                <option value="Almoxarifado">Almoxarifado</option>
-                                <option value="Psicologa">Psicologa</option>
-                                <option value="Alertas">Alertas</option>
-                            </select>
-                          </div>
-                          <div class="">
-                            <a href="#" class="btn btn-next width-50 ml-auto">Proximo</a>
-                          </div>
-                        </div>
-                        <div class="form-step">
-                          <div class="input-group">
-                            <label for="phone">Tipo de Atendimento</label>
-                            <select id="tipoDeAtendimento" name="tipoDeAtendimento">
-                                <option value="Presencial">Presencial</option>
-                                <option value="Remoto">Remoto</option>
-                            </select>
-                          </div>
-                          <div class="input-group">
-                            <label for="email">Classificação</label>
-                            <select id="classificacaoDeAssistencia" name="classificacaoDeAssistencia">
-                                <option value="Hardware">Hardware</option>
-                                <option value="Software">Software</option>
-                            </select>
-                          </div>
-                          <div class="btns-group">
-                            <a href="#" class="btn btn-prev">Voltar</a>
-                            <a href="#" class="btn btn-next">Proximo</a>
-                          </div>
-                        </div>
-                        <div class="form-step">
-                          <div class="input-group">
-                            <label for="dob">Motivo da assistencia</label>
-                            <select id="motivoDaAssistencia" name="motivoDaAssistencia">
-                                <option value="Computador">Computador</option>
-                                <option value="Impressora">Impressora</option>
-                                <option value="Ramal">Ramal</option>
-                                <option value="TelefoneMovel">Telefone Celular</option>
-                                <option value="ConversorDeVideo">Conversor de Video</option>
-                                <option value="Monitor">Monitor</option>
-                            </select>
-                          </div>
-                          <div class="input-group">
-                            <label for="ID">Reclamação do Cliente</label>
-                            <input type="text" id="reclamacaoCliente" placeholder="Digite a reclamação do cliente">
-                          </div>
-                          <div class="btns-group">
-                            <a href="#" class="btn btn-prev">Voltar</a>
-                            <a href="#" class="btn btn-next">Proximo</a>
-                          </div>
-                        </div>
-                        <div class="form-step">
-                          <div class="input-group">
-                            <label for="password">Observação</label>
-                            <input type="text" id="observacao" placeholder="Digite a observação">
-                          </div>
-                          <div class="input-group">
-                            <input type="datetime-local" id="dataEHora" placeholder="Data">
-                          </div>
-                          <div class="btns-group">
-                            <a href="#" class="btn btn-prev">Voltar</a>
-                            <button type="submit" value="Add"> Cadastrar </button>
-                          </div>
-                        </div>
-                      </form>
-                </div>
-
-            </div>
-        </div>
+    <div class="containerMsg">
+      <div class="alertMsg">
+        <img src="../icones/alert.png" alt="">
+        <p cl>Cadastro realizado com sucesso! <br> Status 201</p>
+      </div>
     </div>
 
-    <script src="../JS/form.js"></script>
-    <script src="../JS/api/postAssistencias.js"></script>
+
+    <!-- MENU LATERAL -->
+    <div class="menuLateralMenu">
+      <div class="optionContainer top">
+        <img src="../img/LOGO.png" alt="">
+      </div>
+      <div class="optionContainer">
+        <a href="/index.html">
+          <div class="containerIcon">
+            <img src="../icones/iconMenuHome.png" alt="">
+          </div>
+          <div class="containerTitle">
+            <p>Home page</p>
+          </div>
+        </a>
+      </div>
+      <div class="optionContainer">
+        <a href="../pages/listaAssistencia.html">
+          <div class="containerIcon">
+            <img src="../icones/iconMenuAssistencia.png" alt="">
+          </div>
+          <div class="containerTitle">
+            <p>Lista de dados</p>
+          </div>
+        </a>
+      </div>
+      <div class="optionContainer">
+        <a href="../pages/addAssistencia.html">
+          <div class="containerIcon">
+            <img src="../icones/iconMenuMais.png" alt="">
+          </div>
+          <div class="containerTitle">
+            <p>Criar registro</p>
+          </div>
+        </a>
+      </div>
+      <div class="optionContainer">
+        <a href="../pages/filtrar.html">
+          <div class="containerIcon">
+            <img src="../icones/iconMenuProcura.png" alt="">
+          </div>
+          <div class="containerTitle">
+            <p>Filtrar</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- END MENU -->
+
+    <div class="containerLateralContent">
+
+      <div class="containerInferior">
+        <div class="containerTitleTable">
+          <p>Adicionar nova assistencia</p>
+          <p>Formulario para criar novo registro de assistencia (method POST)</p>
+        </div>
+
+
+        <div class="containerInputsForm">
+
+          <form class="form" id="form" method="POST" action="./addAssistencia.html">
+            <h1 class="text-center">Formulario de Registro</h1>
+            <!-- Progress bar -->
+            <div class="progressbar">
+              <div class="progress" id="progress"></div>
+
+              <div class="progress-step progress-step-active" data-title="Intro"></div>
+              <div class="progress-step" data-title="Contact"></div>
+              <div class="progress-step" data-title="ID"></div>
+              <div class="progress-step" data-title="Password"></div>
+            </div>
+
+            <!-- Steps -->
+            <div class="form-step form-step-active">
+              <div class="input-group">
+                <label for="username">Tecnico responsavel</label>
+                <select id="tecnico" name="tecnico">
+                  <option value="Isaque Lopes de Souza">Isaque Lopes de Souza</option>
+                  <option value="Anderson Mouse Davidson">Anderson Mouse Davidson</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="position">Setor de atendimento</label>
+                <select id="setorAtendimeneto" name="setorAtendimento">
+                  <option value="Cte">Cte</option>
+                  <option value="acertoDeContas">Acerto de Contas</option>
+                  <option value="Rastreamento">Ratreamento</option>
+                  <option value="Cargas">Cargas</option>
+                  <option value="Atendimento">Atendimento</option>
+                  <option value="Borracharia">Borracharia</option>
+                  <option value="Deposito">Deposito</option>
+                  <option value="Oficina">Oficina</option>
+                  <option value="Almoxarifado">Almoxarifado</option>
+                  <option value="Psicologa">Psicologa</option>
+                  <option value="Alertas">Alertas</option>
+                </select>
+              </div>
+              <div class="">
+                <a href="#" class="btn btn-next width-50 ml-auto">Proximo</a>
+              </div>
+            </div>
+            <div class="form-step">
+              <div class="input-group">
+                <label for="phone">Tipo de Atendimento</label>
+                <select id="tipoDeAtendimento" name="tipoDeAtendimento">
+                  <option value="Presencial">Presencial</option>
+                  <option value="Remoto">Remoto</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="email">Classificação</label>
+                <select id="classificacaoDeAssistencia" name="classificacaoDeAssistencia">
+                  <option value="Hardware">Hardware</option>
+                  <option value="Software">Software</option>
+                </select>
+              </div>
+              <div class="btns-group">
+                <a href="#" class="btn btn-prev">Voltar</a>
+                <a href="#" class="btn btn-next">Proximo</a>
+              </div>
+            </div>
+            <div class="form-step">
+              <div class="input-group">
+                <label for="dob">Motivo da assistencia</label>
+                <select id="motivoDaAssistencia" name="motivoDaAssistencia">
+                  <option value="Computador">Computador</option>
+                  <option value="Impressora">Impressora</option>
+                  <option value="Ramal">Ramal</option>
+                  <option value="TelefoneMovel">Telefone Celular</option>
+                  <option value="ConversorDeVideo">Conversor de Video</option>
+                  <option value="Monitor">Monitor</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="ID">Reclamação do Cliente</label>
+                <input type="text" id="reclamacaoCliente" placeholder="Digite a reclamação do cliente">
+              </div>
+              <div class="btns-group">
+                <a href="#" class="btn btn-prev">Voltar</a>
+                <a href="#" class="btn btn-next">Proximo</a>
+              </div>
+            </div>
+            <div class="form-step">
+              <div class="input-group">
+                <label for="password">Observação</label>
+                <input type="text" id="observacao" placeholder="Digite a observação">
+              </div>
+              <div class="input-group">
+                <input type="datetime-local" id="dataEHora" placeholder="Data">
+              </div>
+              <div class="btns-group">
+                <a href="#" class="btn btn-prev">Voltar</a>
+                <button type="submit" value="Add"> Cadastrar </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../JS/form.js"></script>
+  <script src="../JS/api/postAssistencias.js"></script>
 </body>
 
 </html>

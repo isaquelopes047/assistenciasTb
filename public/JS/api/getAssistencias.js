@@ -18,12 +18,10 @@ async function getUser() {
 
         for (var i = 0; i < urlConvertida.length; i++) {
 
-            let ultimos = urlConvertida.slice(-10)
+            let ultimos = urlConvertida.slice(-10).reverse();
 
             var corpoTabela = document.querySelector('tbody');
-
             createDados(ultimos);
-
         }
 
     } catch (err) {

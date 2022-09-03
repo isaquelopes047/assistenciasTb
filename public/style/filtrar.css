@@ -10,6 +10,11 @@
     font-size: 20px;
     margin: 0;
     padding: 0;
-    margin-left: 13px;
+    margin-left: 30px;
     color: black;
+}
+.valorBusca{
+    background-color: rgb(117, 117, 117);
+    height: 40px;
+    margin-left: 30px;
 }

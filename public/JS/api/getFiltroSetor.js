@@ -1,3 +1,5 @@
+
+
 const busca = document.querySelector('.valorBusca');
 busca.addEventListener('focusout', () => {
     let setor = document.querySelector('.valorBusca').value;
@@ -21,6 +23,8 @@ busca.addEventListener('focusout', () => {
 
             for (var i = 0; i < urlConvertida.length; i++) {
 
+                let ultimos = urlConvertida.slice(-10).reverse();
+
                 var corpoTabela = document.querySelector('tbody');
                 var tr = document.createElement('tr');
                 var tdId = document.createElement('td');
@@ -33,15 +37,15 @@ busca.addEventListener('focusout', () => {
                 var tdobservacao = document.createElement('td');
                 var tddataEHora = document.createElement('td');
 
-                tdId.textContent = urlConvertida[i].order;
-                tdTecnico.textContent = urlConvertida[i].nomeTecnico;
-                tdSetor.textContent = urlConvertida[i].setorAtendimeneto;
-                tdTipoAtendimento.textContent = urlConvertida[i].tipoDeAtendimento;
-                tdTclassificacaoDeAssistencia.textContent = urlConvertida[i].classificacaoDeAssistencia;
-                tdmotivoDaAssistencia.textContent = urlConvertida[i].motivoDaAssistencia;
-                tdreclamacaoCliente.textContent = urlConvertida[i].reclamacaoCliente;
-                tdobservacao.textContent = urlConvertida[i].observacao;
-                tddataEHora.textContent = urlConvertida[i].dataEHora;
+                tdId.textContent = ultimos[i].order;
+                tdTecnico.textContent = ultimos[i].nomeTecnico;
+                tdSetor.textContent = ultimos[i].setorAtendimeneto;
+                tdTipoAtendimento.textContent = ultimos[i].tipoDeAtendimento;
+                tdTclassificacaoDeAssistencia.textContent = ultimos[i].classificacaoDeAssistencia;
+                tdmotivoDaAssistencia.textContent = ultimos[i].motivoDaAssistencia;
+                tdreclamacaoCliente.textContent = ultimos[i].reclamacaoCliente;
+                tdobservacao.textContent = ultimos[i].observacao;
+                tddataEHora.textContent = ultimos[i].dataEHora;
 
                 tr.appendChild(tdId);
                 tr.appendChild(tdTecnico);
