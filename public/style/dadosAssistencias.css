@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.containerAll{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.containerLateralContent{
+    width: 96%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.containerInferior{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+ /* Table section */
+.containerTitleTable{
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-top: -30px;
+    padding: 0;
+}
+    .containerInferior p{
+        font-size: 40px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 500;
+        margin-left: 30px;
+        color: rgb(80, 80, 80);
+    }
+    .containerInferior p:nth-child(2){
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        margin-left: 30px;
+        margin-top: -40px;
+    }
+    .containerInferior table{
+        width: 99%;
+        margin-left: 10px;
+    }
+    .containerInferior th{
+        font-weight: 400;
+    }
+    .containerInferior tr{
+        font-family: 'Oswald', sans-serif;
+    }
+        tr:nth-child(odd) {
+	        background-color:#ffffff;
+        }
+        tr:nth-child(even) {
+	        background-color:#43c5e636;
+        }
+td{
+    height: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 17px;
+}
+    td:hover{
+        font-size: 23px;
+    }
+    td:nth-child(1){
+        width: 30px;
+    }
+    td:nth-child(5){
+        width: 190px;
+    }
+    td:nth-child(7){
+        width: 180px;
+    }

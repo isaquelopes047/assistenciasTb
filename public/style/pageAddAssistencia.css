@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.containerMsg{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: -999;
+}
+.alertMsg{
+    width: 300px;
+    height: 120px;
+    background-color: rgba(0, 128, 0, 0.74);
+    margin-right: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    text-align: center;
+    animation: myAnimation 1s ease 0.1s 1 normal running;
+    display: none;
+    z-index: 999;
+}
+.alertMsg img{
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+@keyframes myAnimation {
+    0% {
+        margin-bottom: 0px;
+    }
+    50% {
+        margin-bottom: 100px;
+    }
+    100% {
+        margin-bottom: 0px;
+    }
+}
+
+.containerInputsForm{
+    width: 50%;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+select{
+    width: 600px;
+    height: 50px;
+    border: none;
+    margin: 10px;
+    background-color: rgba(28, 136, 224, 0.966);
+    text-align: center;
+    color: #fff;
+    outline: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 200;
+}
+input{
+    width: 600px;
+    margin: 10px;
+    height: 50px;
+    border: none;
+    background-color: rgba(28, 136, 224, 0.966);
+    text-align: center;
+    color: #fff;
+    outline: 0px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 200;
+}
+::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    color: rgb(255, 255, 255);  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    color: rgb(255, 255, 255);  
+ }
+ 
+ :-ms-input-placeholder {  
+    color: rgb(255, 255, 255);  
+ }
+
+button{
+    width: 300px;
+    height: 30px;
+    border: none;
+    background-color: rgb(30, 172, 37);
+    color: #fff;
+}
+.limpar{
+    background-color: rgb(219, 216, 19);
+    color: #fff;
+    margin-left: 10px;
+    width: 60px;
+}
+
+/* FORM */
+:root {
+    --primary-color: rgb(11, 78, 179);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Global Stylings */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Progressbar */
+.progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 2rem 0 4rem;
+    width: 500px;
+}
+
+.progressbar::before,
+.progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+
+.progress {
+    background-color: var(--primary-color);
+    width: 0%;
+    transition: 0.3s;
+}
+
+.progress-step {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.progress-step-active {
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+}
+
+/* Form */
+.form {
+    width: clamp(820px, 30%, 530px);
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25.5px;
+    letter-spacing: 1.6px;
+    text-decoration: none solid rgb(108, 122, 137);
+}
+
+.form-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+}
+
+.form-step-active {
+    display: block;
+}
+
+.input-group {
+    margin: 2rem 0;
+}
+
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+/* Button */
+.btns-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.btn {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+
+input {
+    width: 600px;
+}
+
+button{
+   height: 60px;
+   border-radius: 5px; 
+       font-family: 'Roboto', sans-serif;
+    line-height: 25.5px;
+    letter-spacing: 1.6px;
+    text-decoration: none solid rgb(108, 122, 137);
+}

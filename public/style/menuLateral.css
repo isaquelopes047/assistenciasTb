@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menuLateralMenu {
+    width: 13%;
+    height: 100vh;
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.containerIcon {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.containerIcon img {
+    width: 30px;
+}
+
+.containerTitle {
+    width: 70%;
+    height: auto;
+}
+
+
+.optionContainer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(97, 97, 97);
+}
+
+.optionContainer:hover p {
+    color: #1abe9e;
+}
+
+.optionContainer:hover {
+    border-right: 3px solid rgb(8, 140, 228);
+    background-color: rgba(145, 145, 145, 0.123);
+}
+
+.optionContainer p {
+    color: #fff;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25.5px;
+    letter-spacing: 1.6px;
+    text-decoration: none solid rgb(108, 122, 137);
+    font-weight: 600;
+}
+
+.optionContainer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+}

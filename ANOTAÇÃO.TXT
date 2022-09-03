@@ -1,0 +1,83 @@
+/* var form = document.getElementById('form')
+
+form.addEventListener('submit', function () {
+
+    let nomeTecnico = document.getElementById('tecnico').value
+    let setorAtendimento = document.getElementById('setorAtendimento').value
+    let tipoDeAtendimento = document.getElementById('tipoDeAtendimento').value
+    let classificacaoDeAssistencia = document.getElementById('classificacaoDeAssistencia').value
+    let motivoDaAssistencia = document.getElementById('motivoDaAssistencia').value
+    let reclamacaoCliente = document.getElementById('reclamacaoCliente').value
+    let observacao = document.getElementById('observacao').value
+    let dataEHora = document.getElementById('dataEHora').value
+
+    fetch('http://localhost:3000/assistencias', {
+        method: 'POST',
+        body: JSON.stringify({
+
+            nomeTecnico: nomeTecnico,
+            setorAtendimento: setorAtendimento,
+            tipoDeAtendimento: tipoDeAtendimento,
+            classificacaoDeAssistencia: classificacaoDeAssistencia,
+            motivoDaAssistencia: motivoDaAssistencia,
+            reclamacaoCliente: reclamacaoCliente,
+            observacao: observacao,
+            dataEHora: dataEHora
+
+        }),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        }
+    })
+        .then(function (response) {
+            return response.json()
+        })
+        .then(function (data) {
+            console.log(data)
+
+        }).catch(error => console.error('Error:', error));
+}); */
+
+var form = document.getElementById('form')
+form.addEventListener('submit', () => {
+    (async () => {
+
+        /* let nomeTecnico = document.getElementById('tecnico').value
+        let setorAtendimento = document.getElementById('setorAtendimento').value
+        let tipoDeAtendimento = document.getElementById('tipoDeAtendimento').value
+        let classificacaoDeAssistencia = document.getElementById('classificacaoDeAssistencia').value
+        let motivoDaAssistencia = document.getElementById('motivoDaAssistencia').value
+        let reclamacaoCliente = document.getElementById('reclamacaoCliente').value
+        let observacao = document.getElementById('observacao').value
+        let dataEHora = document.getElementById('dataEHora').value */
+
+        const rawResponse = await fetch('http://localhost:3000/assistencias', {
+            method: 'PORT',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                nomeTecnico: "Isaque",/* document.getElementById('tecnico').value, */
+                setorAtendimento: "Cargas ",/* document.getElementById('setorAtendimento').value */
+                tipoDeAtendimento: "Presencial",/* document.getElementById('tipoDeAtendimento').value */
+                classificacaoDeAssistencia: "Computador",/* document.getElementById('classificacaoDeAssistencia').value */
+                motivoDaAssistencia: "Teste",/* document.getElementById('motivoDaAssistencia').value */
+                reclamacaoCliente: "Teste",/* document.getElementById('reclamacaoCliente').value */
+                observacao: "Teste",/* document.getElementById('observacao').value */
+                dataEHora: "Teste"/* document.getElementById('dataEHora').value */
+                /* nomeTecnico: nomeTecnico,
+                setorAtendimento: setorAtendimento,
+                tipoDeAtendimento: tipoDeAtendimento,
+                classificacaoDeAssistencia: classificacaoDeAssistencia,
+                motivoDaAssistencia: motivoDaAssistencia,
+                reclamacaoCliente: reclamacaoCliente,
+                observacao: observacao,
+                dataEHora: dataEHora */
+            })
+        });
+        const content = await rawResponse.json();
+
+        console.log(content);
+    })();
+})

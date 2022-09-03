@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style/pageAddAssistencia.css">
+    <link rel="stylesheet" href="../style/menuLateral.css">
+    <link rel="stylesheet" href="../style/dadosAssistencias.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="containerAll">
+
+        <div class="containerMsg">
+            <div class="alertMsg">
+                <img src="../icones/alert.png" alt="">
+                <p cl>Cadastro realizado com sucesso! <br> Status 201</p>
+            </div>
+        </div>
+
+
+        <!-- MENU LATERAL -->
+        <div class="menuLateralMenu">
+            <div class="optionContainer">
+                <a href="/index.html">
+                    <div class="containerIcon">
+                        <img src="../icones/iconMenuHome.png" alt="">
+                    </div>
+                    <div class="containerTitle">
+                        <p>Home page</p>
+                    </div>
+                </a>
+            </div>
+            <div class="optionContainer">
+                <a href="./listaAssistencia.html">
+                    <div class="containerIcon">
+                        <img src="../icones/iconMenuAssistencia.png" alt="">
+                    </div>
+                    <div class="containerTitle">
+                        <p>Lista de dados</p>
+                    </div>
+                </a>
+            </div>
+            <div class="optionContainer">
+                <a href="./addAssistencia.html">
+                    <div class="containerIcon">
+                        <img src="../icones/iconMenuMais.png" alt="">
+                    </div>
+                    <div class="containerTitle">
+                        <p>Criar registro</p>
+                    </div>
+                </a>
+            </div>
+            <div class="optionContainer">
+                <a href="./filtrar.html">
+                    <div class="containerIcon">
+                        <img src="../icones/iconMenuProcura.png" alt="">
+                    </div>
+                    <div class="containerTitle">
+                        <p>Filtrar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- END MENU -->
+
+        <div class="containerLateralContent">
+
+            <div class="containerInferior">
+                <div class="containerTitleTable">
+                    <p>Buscar por parametro</p>
+                    <p>Filtrar assistencias por parametro (method GET)</p>
+                    <input type="text" class="valorBusca">
+                    <p class="encontradoRegistros">asdasd</p>
+                </div>
+
+                <table>
+                    <thead>
+                        <th>Id</th>
+                        <th>Tecnico</th>
+                        <th>Setor de atendimento</th>
+                        <th>Tipo de atendimento</th>
+                        <th>Classificação da Assistencia</th>
+                        <th>Motivo da assitencia</th>
+                        <th>Reclamação do cliente</th>
+                        <th>Observação</th>
+                        <th>Data e hora</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../JS/api/getFiltroSetor.js"></script>
+</body>
+
+</html>
