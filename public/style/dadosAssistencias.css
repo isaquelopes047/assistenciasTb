@@ -1,66 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
-.containerAll{
+
+.containerAll {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
 }
-.containerLateralContent{
+
+.containerLateralContent {
     width: 96%;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
-.containerInferior{
+
+.containerInferior {
     width: 100%;
     height: 100vh;
     overflow-y: scroll;
     z-index: 9;
 }
- /* Table section */
-.containerTitleTable{
+
+/* Table section */
+.containerTitleTable {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #ccc;
     margin-top: -30px;
     padding: 0;
 }
-    .containerInferior p{
-        font-size: 40px;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 500;
-        margin-left: 30px;
-        color: rgb(80, 80, 80);
-    }
-    .containerInferior p:nth-child(2){
-        font-size: 20px;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 300;
-        margin-left: 30px;
-        margin-top: -40px;
-    }
-    .containerInferior table{
-        width: 99%;
-        margin-left: 10px;
-    }
-    .containerInferior th{
-        font-weight: 400;
-    }
-    .containerInferior tr{
-        font-family: 'Oswald', sans-serif;
-    }
-        tr:nth-child(odd) {
-	        background-color:#ffffff;
-        }
-        tr:nth-child(even) {
-	        background-color:#43c5e636;
-        }
-td{
+
+.containerInferior p {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    margin-left: 30px;
+    color: rgb(80, 80, 80);
+}
+
+.containerInferior p:nth-child(2) {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    margin-left: 30px;
+    margin-top: -40px;
+}
+
+.containerInferior table {
+    width: 99%;
+    margin-left: 10px;
+}
+
+.containerInferior th {
+    font-weight: 400;
+}
+
+.containerInferior tr {
+    font-family: 'Oswald', sans-serif;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #43c5e636;
+}
+
+td {
     height: 40px;
     transition: 0.5s;
     cursor: pointer;
@@ -69,15 +81,23 @@ td{
     text-align: center;
     font-size: 15px;
 }
-    td:hover{
-        font-size: 23px;
-    }
-    td:nth-child(1){
-        width: 30px;
-    }
-    td:nth-child(5){
-        width: 190px;
-    }
-    td:nth-child(7){
-        width: 180px;
-    }
+
+td:hover {
+    font-size: 16px;
+}
+
+/* Buttons rows */
+td ~ a {
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td ~ a img {
+    width: 25px;
+    margin-left: 10px;
+}
