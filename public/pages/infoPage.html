@@ -1,1 +1,81 @@
-<h1>Ola mundo</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/pageAddAssistencia.css">
+    <link rel="stylesheet" href="../style/menuLateral.css">
+    <link rel="stylesheet" href="../style/dadosAssistencias.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="containerAll">
+
+        <!-- MENU LATERAL -->
+        <div class="menuLateralMenu">
+            <div class="optionContainer top">
+                <img src="../img/LOGO.png" alt="">
+            </div>
+            <div class="optionContainer">
+                <a href="/index.html">
+                    <div class="containerIcon">
+                        <img src="../icones/iconMenuHome.png" alt="">
+                    </div>
+                    <div class="containerTitle">
+                        <p>Home page</p>
+                    </div>
+                </a>
+            </div>
+            <div class="optionContainer">
+                <a href="../pages/listaAssistencia.html">
+                    <div class="containerIcon">
+                        <img src="../icones/iconMenuAssistencia.png" alt="">
+                    </div>
+                    <div class="containerTitle">
+                        <p>Lista de dados</p>
+                    </div>
+                </a>
+            </div>
+            <div class="optionContainer">
+                <a href="../pages/addAssistencia.html">
+                    <div class="containerIcon">
+                        <img src="../icones/iconMenuMais.png" alt="">
+                    </div>
+                    <div class="containerTitle">
+                        <p>Criar registro</p>
+                    </div>
+                </a>
+            </div>
+            <div class="optionContainer">
+                <a href="../pages/filtrar.html">
+                    <div class="containerIcon">
+                        <img src="../icones/iconMenuProcura.png" alt="">
+                    </div>
+                    <div class="containerTitle">
+                        <p>Filtrar</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="containerLateralContent">
+            <div class="containerInferior">
+                <div class="containerTitleTable">
+                    <p class="dadosId"></p>
+                    <p>Formulario para criar novo registro de assistencia (method POST)</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="../JS/api/getinfoItem.js"></script>
+</body>
+
+</html>
