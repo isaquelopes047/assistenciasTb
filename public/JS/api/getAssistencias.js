@@ -18,7 +18,7 @@ async function getUser() {
 
         for (var i = 0; i < urlConvertida.length; i++) {
 
-            let ultimos = urlConvertida.slice(-10).reverse();
+            let ultimos = urlConvertida.slice(-20).reverse();
 
             var corpoTabela = document.querySelector('tbody');
             createDados(ultimos);

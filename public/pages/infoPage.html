@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/pageAddAssistencia.css">
+
     <link rel="stylesheet" href="../style/menuLateral.css">
     <link rel="stylesheet" href="../style/dadosAssistencias.css">
+    <link rel="stylesheet" href="../style/infoItem.css">
 
     <title>Document</title>
 </head>
@@ -69,6 +70,32 @@
                     <p class="dadosId"></p>
                     <p>Formulario para criar novo registro de assistencia (method POST)</p>
                 </div>
+
+                <div class="containerinfoItem">
+                    <div class="containerInfosSuperior">
+                        <div class="infos">
+                            <p class="order"></p>
+                            <p class="setor"></p>
+                        </div>
+                        <div class="infos">
+                            <p class="tecnico"></p>
+                            <p class="classificacao"></p>
+                        </div>
+                        <div class="infos">
+                            <p class="motivo"></p>
+                            <p class="reclamacao"></p>
+                        </div>
+                        <div class="infos">
+                            <p class="observacao"></p>
+                            <p class="dataEHora"></p>
+                        </div>
+                        <div class="infos right">
+                            <button class="deleteButton">
+                                <img src="../icones/icons8-lixo-30.png" alt="">Deletar
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -76,6 +103,7 @@
     </div>
 
     <script src="../JS/api/getinfoItem.js"></script>
+    <script src="../JS/api/deleteRegistro.js"></script>
 </body>
 
 </html>
