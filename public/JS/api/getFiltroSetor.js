@@ -24,34 +24,8 @@ busca.addEventListener('focusout', () => {
             for (var i = 0; i < urlConvertida.length; i++) {
 
                 let ultimos = urlConvertida.slice(-10).reverse();
-
                 var corpoTabela = document.querySelector('tbody');
-                var tr = document.createElement('tr');
-                var tdId = document.createElement('td');
-                var tdTecnico = document.createElement('td');
-                var tdSetor = document.createElement('td');
-                var tdmotivoDaAssistencia = document.createElement('td');
-                var tdreclamacaoCliente = document.createElement('td');
-                var tddataEHora = document.createElement('td');
-                var buttonDelete = document.createElement('a')
-
-                tdId.textContent = ultimos[i].order;
-                tdTecnico.textContent = ultimos[i].nomeTecnico;
-                tdSetor.textContent = ultimos[i].setorAtendimeneto;
-                tdmotivoDaAssistencia.textContent = ultimos[i].motivoDaAssistencia;
-                tdreclamacaoCliente.textContent = ultimos[i].reclamacaoCliente;
-                tddataEHora.textContent = ultimos[i].dataEHora;
-                buttonDelete.innerHTML = `<img src="../icones/info.png" alt="">`
-                buttonDelete.setAttribute("href", `./infoPage.html?order=${ultimos[i].order}`);
-
-                tr.appendChild(tdId);
-                tr.appendChild(tdTecnico);
-                tr.appendChild(tdSetor);
-                tr.appendChild(tdmotivoDaAssistencia);
-                tr.appendChild(tdreclamacaoCliente);
-                tr.appendChild(tddataEHora);
-                tr.appendChild(buttonDelete);
-                corpoTabela.appendChild(tr);
+                getDados(ultimos);
 
                 let informa = document.querySelector('.encontradoRegistros')
                 informa.innerHTML = `Foram encontrados ${urlConvertida.length} registros`;
@@ -64,6 +38,35 @@ busca.addEventListener('focusout', () => {
 
         } catch (err) {
             console.log(err);
+        }
+
+        function getDados(ultimos) {
+            var tr = document.createElement('tr');
+            var tdId = document.createElement('td');
+            var tdTecnico = document.createElement('td');
+            var tdSetor = document.createElement('td');
+            var tdmotivoDaAssistencia = document.createElement('td');
+            var tdreclamacaoCliente = document.createElement('td');
+            var tddataEHora = document.createElement('td');
+            var buttonDelete = document.createElement('a');
+
+            tdId.textContent = ultimos[i].order;
+            tdTecnico.textContent = ultimos[i].nomeTecnico;
+            tdSetor.textContent = ultimos[i].setorAtendimeneto;
+            tdmotivoDaAssistencia.textContent = ultimos[i].motivoDaAssistencia;
+            tdreclamacaoCliente.textContent = ultimos[i].reclamacaoCliente;
+            tddataEHora.textContent = ultimos[i].dataEHora;
+            buttonDelete.innerHTML = `<img src="../icones/info.png" alt="">`;
+            buttonDelete.setAttribute("href", `./infoPage.html?order=${ultimos[i].order}`);
+
+            tr.appendChild(tdId);
+            tr.appendChild(tdTecnico);
+            tr.appendChild(tdSetor);
+            tr.appendChild(tdmotivoDaAssistencia);
+            tr.appendChild(tdreclamacaoCliente);
+            tr.appendChild(tddataEHora);
+            tr.appendChild(buttonDelete);
+            corpoTabela.appendChild(tr);
         }
     }
     getSetor();
