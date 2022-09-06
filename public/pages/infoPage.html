@@ -28,7 +28,7 @@
                         <img src="../icones/iconMenuHome.png" alt="">
                     </div>
                     <div class="containerTitle">
-                        <p>Home page</p>
+                        <p>Home page ></p>
                     </div>
                 </a>
             </div>
@@ -38,7 +38,7 @@
                         <img src="../icones/iconMenuAssistencia.png" alt="">
                     </div>
                     <div class="containerTitle">
-                        <p>Lista de dados</p>
+                        <p>Lista de dados ></p>
                     </div>
                 </a>
             </div>
@@ -48,7 +48,7 @@
                         <img src="../icones/iconMenuMais.png" alt="">
                     </div>
                     <div class="containerTitle">
-                        <p>Criar registro</p>
+                        <p>Criar registro ></p>
                     </div>
                 </a>
             </div>
@@ -58,13 +58,28 @@
                         <img src="../icones/iconMenuProcura.png" alt="">
                     </div>
                     <div class="containerTitle">
-                        <p>Filtrar</p>
+                        <p>Filtrar ></p>
                     </div>
                 </a>
             </div>
         </div>
 
         <div class="containerLateralContent">
+
+            <div class="modalDeleteAll">
+                <div class="modelaDelte">
+                    <p>Tem certeza que deseja deletar esse registro?</p>
+                    <div class="containerButtons">  
+                        <button class="openModalDelete Confirmar">
+                            <img src="../icones/icons8-lixo-30.png" alt="">Confirmar
+                        </button>
+                        <button class="openModalDelete close">
+                            <img src="../icones/voltar.png" alt="">Voltar
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <div class="containerInferior">
                 <div class="containerTitleTable">
                     <p class="dadosId"></p>
@@ -90,7 +105,7 @@
                             <p class="dataEHora"></p>
                         </div>
                         <div class="infos right">
-                            <button class="deleteButton">
+                            <button class="openModalDelete delete">
                                 <img src="../icones/icons8-lixo-30.png" alt="">Deletar
                             </button>
                         </div>
@@ -98,12 +113,10 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
-    <script src="../JS/api/getinfoItem.js"></script>
-    <script src="../JS/api/deleteRegistro.js"></script>
+    <script src="../JS/api/get-dell-registro.js"></script>
+    <script src="../JS/closeModal.js"></script>
 </body>
 
 </html>

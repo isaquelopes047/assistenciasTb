@@ -18,7 +18,6 @@ busca.addEventListener('focusout', () => {
             if (!response.ok) {
                 throw new Error(`Error! status: ${response.status}`);
             }
-
             const urlConvertida = await response.json()
 
             for (var i = 0; i < urlConvertida.length; i++) {

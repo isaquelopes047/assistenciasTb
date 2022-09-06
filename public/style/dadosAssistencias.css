@@ -64,6 +64,10 @@ body {
 .containerInferior tr {
     font-family: 'Oswald', sans-serif;
 }
+.containerInferior tr:hover{
+    background-color: rgba(136, 180, 241, 0.37);
+    transition: 0.3s;
+}
 
 tr:nth-child(odd) {
     background-color: #ffffff;

@@ -22,7 +22,13 @@ async function getUser() {
 
             var corpoTabela = document.querySelector('tbody');
             createDados(ultimos);
+
+/*             const dados = document.getElementsByTagName("td")[2]
+            for(var l = 0; l < dados.length; l++){
+                console.log(dados)
+            } */
         }
+
 
     } catch (err) {
         console.log(err);
@@ -36,7 +42,7 @@ async function getUser() {
         var tdmotivoDaAssistencia = document.createElement('td');
         var tdreclamacaoCliente = document.createElement('td');
         var tddataEHora = document.createElement('td');
-        var buttonDelete = document.createElement('a')
+        var buttonDelete = document.createElement('a');
 
         tdId.textContent = ultimos[i].order;
         tdTecnico.textContent = ultimos[i].nomeTecnico;
@@ -54,7 +60,7 @@ async function getUser() {
         tr.appendChild(tdreclamacaoCliente);
         tr.appendChild(tddataEHora);
         tr.appendChild(buttonDelete);
-        
+
         corpoTabela.appendChild(tr);
     }
 }
