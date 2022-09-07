@@ -1,0 +1,57 @@
+
+
+.cte{
+    color: #fff;
+    background-color: blue;
+    border-radius: 5px;
+}
+.alertas{
+    color: #fff;
+    background-color: green;
+    border-radius: 5px;
+}
+.acertDeContas{
+    color: #fff;
+    background-color: rgb(174, 202, 17);
+    border-radius: 5px;
+}
+.atendimento{
+    color: #fff;
+    background-color: rgb(206, 52, 52);
+    border-radius: 5px;
+}
+.borracharia{
+    color: #fff;
+    background-color: rgb(75, 75, 75);
+    border-radius: 5px;
+}
+.rastreamento{
+    color: #fff;
+    background-color: rgb(216, 101, 34);
+    border-radius: 5px;
+}
+.oficina{
+    color: #fff;
+    background-color: rgb(75, 10, 160);
+    border-radius: 5px;
+}
+.cargas{
+    color: #fff;
+    background-color: rgb(18, 223, 137);
+    border-radius: 5px;
+}
+.deposito{
+    color: #fff;
+    background-color: rgb(158, 12, 216);
+    border-radius: 5px;
+}
+.almoxarifado{
+    color: #fff;
+    background-color: rgb(19, 90, 112);
+    border-radius: 5px;
+}
+.rh{
+    color: #fff;
+    background-color: rgb(72, 0, 241);
+    border-radius: 5px;
+}

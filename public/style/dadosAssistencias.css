@@ -91,6 +91,12 @@ td:nth-child(1){
     border-radius: 5px;
     color: #fff;
 }
+td:nth-child(3){
+    width: 200px;
+}
+td:nth-child(6){
+    width: 200px;
+}
 
 td:hover {
     font-size: 16px;

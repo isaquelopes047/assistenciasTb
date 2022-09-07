@@ -23,10 +23,7 @@ async function getUser() {
             var corpoTabela = document.querySelector('tbody');
             createDados(ultimos);
 
-/*             const dados = document.getElementsByTagName("td")[2]
-            for(var l = 0; l < dados.length; l++){
-                console.log(dados)
-            } */
+            styleSetores();
         }
 
 
@@ -65,3 +62,26 @@ async function getUser() {
     }
 }
 getUser();
+
+//Style for sector in tds
+// - Get value text and add style for your value
+function styleSetores() {
+    let myTable = document.querySelector("#table");
+    let allTds = myTable.querySelectorAll("table td:nth-of-type(3)");
+    let allTrs = myTable.querySelectorAll("tr");
+
+    for (item of allTds.values()) {
+        if (item.textContent === 'Cte') item.classList.add('cte')
+        if (item.textContent === 'Alertas') item.classList.add('alertas')
+        if (item.textContent === 'Acerto de Contas') item.classList.add('acertDeContas')
+        if (item.textContent === 'Atendimento') item.classList.add('atendimento')
+        if (item.textContent === 'Borracharia') item.classList.add('borracharia')
+        if (item.textContent === 'Rastreamento') item.classList.add('rastreamento')
+        if (item.textContent === 'Oficina') item.classList.add('oficina')
+        if (item.textContent === 'Cargas') item.classList.add('cargas')
+        if (item.textContent === 'Deposito') item.classList.add('deposito')
+        if (item.textContent === 'Almoxarifado') item.classList.add('almoxarifado')
+        if (item.textContent === 'Rh') item.classList.add('rh')
+    }
+}
+
