@@ -10,11 +10,12 @@ body {
 .menuLateralMenu {
     width: 250px;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: #2a6aaf;
     display: flex;
     flex-direction: column;
     -webkit-box-shadow: 2px 8px 23px 0px rgba(0,0,0,0.68); 
     box-shadow: 2px 8px 23px 0px rgba(0,0,0,0.68);
+    overflow: hidden;
 }
 
 .containerIcon {
@@ -43,6 +44,7 @@ body {
     z-index: 999;
     cursor: pointer;
     border-bottom: 1px solid rgb(117, 117, 117);
+    border-left: 7px solid transparent;
     transition: 0.3s;
 }
 
@@ -50,10 +52,11 @@ body {
     width: 105%;
     border-right: 3px solid #1abe9e;
     background-color: rgb(18, 71, 133);
+    border-left: 7px solid rgb(19, 230, 19);
 }
 
 .optionContainer p {
-    color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
     margin-left: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;

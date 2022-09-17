@@ -1,12 +1,13 @@
 
 /* GET ID PELA URL */
+/* TELA DE INFORMAÇÃO */
 const urlSearch = new URLSearchParams(window.location.search);
 const orderParam = urlSearch.get("order")
 
 async function getOrder() {
     try {
 
-        const response = await fetch(`http://localhost:3000/assistencias/lista?order=${orderParam}`, {
+        const response = await fetch(`https://apichamados.herokuapp.com/assistencias/lista?order=${orderParam}`, {
             Method: 'GET',
             Headers: {
                 Accept: 'application.json',
@@ -48,12 +49,13 @@ async function getOrder() {
 }
 getOrder();
 
+/* DELETE */
 const buttonDell = document.querySelector('.Confirmar');
 buttonDell.addEventListener('click', () => {
 
     async function dellRegistro() {
         try {
-            const response = await fetch(`http://localhost:3000/assistencias/listaDelete?order=${orderParam}`, {
+            const response = await fetch(`https://apichamados.herokuapp.com/assistencias/listaDelete?order=${orderParam}`, {
                 method: 'DELETE',
                 Headers: {
                     Accept: 'application.json',

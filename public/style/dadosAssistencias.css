@@ -21,7 +21,6 @@ body {
 
 .containerInferior {
     width: 100%;
-    height: 100vh;
     overflow-y: scroll;
     z-index: 9;
 }
@@ -33,6 +32,7 @@ body {
     border-bottom: 1px solid #ccc;
     margin-top: -30px;
     padding: 0;
+    background-color: #fff;
 }
 
 .containerInferior p {
@@ -64,7 +64,8 @@ body {
 .containerInferior tr {
     font-family: 'Oswald', sans-serif;
 }
-.containerInferior tr:hover{
+
+.containerInferior tr:hover {
     background-color: rgba(136, 180, 241, 0.37);
     transition: 0.3s;
 }
@@ -80,21 +81,24 @@ tr:nth-child(even) {
 td {
     height: 40px;
     transition: 0.5s;
+    border-radius: 5px;
     cursor: pointer;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     text-align: center;
     font-size: 15px;
 }
-td:nth-child(1){
+
+td:nth-child(1) {
     background-color: rgb(77, 185, 34);
-    border-radius: 5px;
     color: #fff;
 }
-td:nth-child(3){
+
+td:nth-child(3) {
     width: 200px;
 }
-td:nth-child(6){
+
+td:nth-child(6) {
     width: 200px;
 }
 
@@ -103,7 +107,7 @@ td:hover {
 }
 
 /* Buttons rows */
-td ~ a {
+td~a {
     border: none;
     background-color: transparent;
     width: 100%;
@@ -113,14 +117,14 @@ td ~ a {
     align-items: center;
 }
 
-td ~ a img {
+td~a img {
     width: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.addAssistencia{
+.addAssistencia {
     margin-left: 30px;
     width: 160px;
     height: 40px;
@@ -135,7 +139,8 @@ td ~ a img {
     border-radius: 5px;
     cursor: pointer;
 }
-a{
+
+a {
     text-decoration: none;
     list-style: none;
 }

@@ -2,7 +2,7 @@
 async function getUser() {
     try {
 
-        const response = await fetch('http://localhost:3000/assistencias', {
+        const response = await fetch('https://apichamados.herokuapp.com/assistencias', {
             Method: 'GET',
             Headers: {
                 Accept: 'application.json',
@@ -82,6 +82,7 @@ function styleSetores() {
         if (item.textContent === 'Deposito') item.classList.add('deposito')
         if (item.textContent === 'Almoxarifado') item.classList.add('almoxarifado')
         if (item.textContent === 'Rh') item.classList.add('rh')
+        if (item.textContent === 'Psicologa') item.classList.add('psicologa')
     }
 }
 

@@ -15,7 +15,7 @@ form.addEventListener('submit', (e) => {
             let observacao = document.getElementById('observacao').value
             let dataEHora = document.getElementById('dataEHora').value
 
-            const rawResponse = await fetch('http://localhost:3000/assistencias', {
+            const rawResponse = await fetch('https://apichamados.herokuapp.com/assistencias', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',

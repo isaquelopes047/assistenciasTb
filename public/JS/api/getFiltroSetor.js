@@ -6,7 +6,7 @@ busca.addEventListener('focusout', () => {
 
     async function getSetor() {
         try {
-            const response = await fetch(`http://localhost:3000/assistencias/busca?setorAtendimeneto=${setor}`, {
+            const response = await fetch(`https://apichamados.herokuapp.com/assistencias/busca?setorAtendimeneto=${setor}`, {
                 Method: 'GET',
                 Headers: {
                     Accept: 'application.json',
